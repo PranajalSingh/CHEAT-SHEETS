@@ -1,0 +1,126 @@
+1.
+git status
+    shows the status of wd with respect to main/origin
+
+2.
+git init
+    initialise an empty git repo by adding .git
+    turn any repo in git
+
+3.
+git add <file>
+    add selected modified and untracked file in staging area
+
+git add --a
+git add .
+    add all modified and untracked files in staging area
+
+4.
+git commit -m "<message>"
+    commit changes
+
+git -a -m "<message>"
+    skipping add and commit changes(excluding untracked files)
+
+5.
+git log
+    shows all commits
+
+git log -p
+    show all commits and changes with each commits
+
+git log -p -<n>
+    shows n number of changes with each commit
+
+git log --stat
+    shows all commits and changes with each commits in sort summary
+
+git log --pretty=oneline
+    shows all commits in one line each
+
+git log --pretty=short
+    shows all commits in sort
+
+git log --since=<n>.days
+    shows commits of last n number of days, weeks, months or year
+
+git log pretty=format:<format>
+    shows all commits in given format
+
+6.
+rm -rf .git
+    remove .git from a repository
+
+7.
+git clone <url>
+    clone an existing repository
+
+8.
+cd <directory name>
+    change directory(enter in <directory name>)
+cd ..
+    change directory(leave to a directory)
+
+9.
+pwd
+    print working directory
+
+10.
+ls
+    show list content
+
+11.
+touch <new_file_name.extension>
+    creates a blank file with given extension
+
+12.
+.gitignore
+    A file which allows git to ignore unwanted files or directories
+        *.log
+            ignore all log files
+        dir/
+            ignore all dir directories
+        /dir/
+            ignore only current dir directories(won't affect dir/ directories of subdirectories)
+
+creating .gitignore file
+    touch .gitignore
+
+13.
+git diff
+    show comparison between working directory - staging area
+
+git diff --staged
+    show comparison between last commit and staging area
+
+14.
+git rm <file_name>
+    remove/delete a file + added to staged directly
+
+15.
+git mv <filename> <new_file name>
+    rename a file + added to staged directly
+16.
+vim editor commands
+    i = insert
+    esc = escape
+    : = to access wq
+    wq = write and quit
+    q = quit
+
+17.
+git commit --amend
+    amend/merge/update last commit with current working directory
+
+18.
+git restore --staged <file_name>
+    unstage
+
+git restore <file_name>
+    discard any changes in a file and match it to last commit
+
+git checkout -- <file_name>
+    discard any changes in a file and match it to last commit
+
+19.
+
