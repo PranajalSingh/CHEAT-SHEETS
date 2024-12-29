@@ -116,11 +116,66 @@ git commit --amend
 git restore --staged <file_name>
     unstage
 
-git restore <file_name>
+git restore <file_name>  ##################
     discard any changes in a file and match it to last commit
 
 git checkout -- <file_name>
     discard any changes in a file and match it to last commit
 
-19.
+git checkout -f
+    discard any changes in all files and match it to last commit
+    clean working directory(clear unstaged and staged both changes)
 
+19.
+git remote add origin <url>
+    add remote origin to git
+
+git remote
+    shows remote name
+
+git remote -v
+    shows remote url for pull and pull/fetch
+
+20.
+git push origin <branch_name>
+git push -u origin <branch_name>
+    push local commits to remote branch
+
+21.
+git pull origin <branch_name>
+    pull commits from remote branch
+
+22.
+git fetch origin <branch_name>
+    fetch commits from remote branch
+
+23.
+git checkout -b <new_branch_name>
+    create new branch and open it in git bash
+
+git checkout <branch_name>
+    change branches in git bash
+
+24.
+git branch
+    shows all branches
+
+git branch --merged
+    show merged branches
+
+git branch --no-merged
+    show no-merges branches
+
+git branch -v
+    last commit of all branches with message
+
+git branch -d <branch_name>
+    delete merged branches
+
+git branch -D <branch_name>
+    delete no-merged branches
+
+25.
+git merge <branch_name>   #########################
+    merge two branches
+    merges given branch to current branch
