@@ -140,6 +140,10 @@ git remote -v
 git push origin <branch_name>
 git push -u origin <branch_name>
     push local commits to remote branch
+    it creates new branch if branch name doesn't match with existing branches at remote
+
+git push -d origin <branch_name>
+    delete branch from remote
 
 21.
 git pull origin <branch_name>
